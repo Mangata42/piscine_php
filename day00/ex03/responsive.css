@@ -1,0 +1,38 @@
+.atomic {text-align: right; font-size:0.8vw}
+.element {text-align: center; font-size:1.5vw}
+.number {text-align: left; font-size:0.8vw}
+body {background-color:dimgrey}
+
+table {
+        width: 100%;
+    }
+
+#annexe {
+        margin-left: 20%;
+}
+
+td {
+
+		height: 0.5vmin;
+        border: 1px solid black;
+        /*padding: 10px*/
+    }
+tr {
+		height: 0.5vmin;
+	}
+td.alkali {background-color:deeppink}
+td.alkaline {background-color: darkorange}
+td.transition {background-color: yellow}
+td.basic {background-color: aquamarine}
+td.semimetal {background-color: deepskyblue}
+td.nonmetal {background-color: dodgerblue}
+td.halogen {background-color: mediumpurple}
+td.noblegas {background-color: blueviolet}
+td.lanthanide {background-color: rosybrown}
+td.actinide {background-color: sandybrown}
+            
+img {
+        width: 40%;
+        display: inline;
+        margin-left: 30%;
+    }

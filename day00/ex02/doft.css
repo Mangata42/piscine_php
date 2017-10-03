@@ -1,0 +1,148 @@
+body {
+	background-color:#585858;
+}
+
+.title-font {
+	font-family: cursive;
+}
+
+#main-container {
+	width:80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.header-block {
+	position: relative;
+	border-radius: 10px;
+	background-color: #909090;
+	margin: 2% 0;
+	padding: 0.5% 0.5% 0.5% 0.5%;
+	box-shadow: 10px 10px 12px black;
+}
+
+.text-change-size {
+	font-size: 28px;
+	font-family: monospace;
+}
+
+.shadow-text {
+	text-shadow: 2px 5px 2px red;
+}
+.second-container {
+	display: flex;
+	justify-content:space-around;
+}
+
+.extern-block-left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #909090;
+	border-radius: 10px;
+	height: 370px;
+	padding: 2%;
+	box-shadow: 10px 10px 12px black;
+}
+
+.extern-block-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #909090;
+	border-radius: 10px;
+	height: 370px;
+	padding: 1%;
+	box-shadow: 10px 10px 12px black;
+}
+
+.green-block {
+	background-color: rgb(140, 253, 142);
+	width: 528px;
+	font-family:  sans-serif;
+	font-size: 17px;
+	border-radius: 10px;
+	padding: .5% .5% 4% .5%;
+	box-shadow: 10px 10px 12px black;
+	position: relative;
+	top: -40px;
+	left: -70px;
+}
+
+.inline-block-middle {
+	display: inline-block;
+	position: relative;
+	background-color: #909090;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 10px 10px 12px black;
+	width: 70%;
+}
+
+.apple-link {
+	position: absolute;
+	bottom: 19%;
+	right: 3%;
+	width: 19%;
+	height: 25%;
+}
+
+.ikea-link {
+	position: absolute;
+	bottom: 12%;
+	left: 32%;
+	width: 11%;
+	height: 31%;
+}
+
+.wrapper-input {
+	margin-top: 0px;
+}
+.input-field {
+	width: 68%;
+	margin: 0 5px;
+	border-style: inset;
+	border-width: 2.3px;
+}
+
+.input-submit {
+	padding: 2px 5px;
+	border:0 none;
+	background-color: rgb(242, 241, 242);
+	font-size: 13px;
+	font-family: sans-serif;
+	border: 1px groove #D8D8D8;
+	border-radius: 3px;
+}
+.img-cluster {
+	width: 100%;
+}
+.image-border-red {
+	border: 6px solid red;
+	margin: 7%;
+}
+
+.image-brick {
+	background: url("./resources/brick.jpg");
+	background-repeat: repeat;
+	width:120px;
+	height:70px;
+}
+.img_top {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.img_bottom {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.img_loupe {
+	position: absolute;
+	bottom: -20px;
+	right: 30px
+}
