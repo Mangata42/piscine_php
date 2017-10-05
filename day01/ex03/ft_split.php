@@ -1,6 +1,5 @@
 #!/usr/bin/php
 <?php
-
 function ft_split($string)
 {
 	$i = 0;

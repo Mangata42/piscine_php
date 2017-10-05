@@ -39,6 +39,7 @@ while ($i < $argc)
 	$a_full = array_merge($a_full, $tmp_array);
 	$i++;
 }
+
 $i = 0;
 while ($i < count($a_full))
 {
@@ -51,8 +52,10 @@ while ($i < count($a_full))
 	$i++;
 }
 
-sort($a_alpha);
-print_r($a_digit);
-print_r($a_alpha);
-print_r($a_weird);
+sort($a_digit, SORT_STRING);
+sort($a_weird);
+usort($a_alpha, 'strnatcasecmp');
+aff_array($a_alpha, count($a_alpha));
+aff_array($a_digit, count($a_digit));
+aff_array($a_weird, count($a_weird));
 ?>

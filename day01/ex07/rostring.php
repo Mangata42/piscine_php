@@ -29,5 +29,5 @@ while ($i < count($return_array))
 	$i++;
 }
 $final_array[$y + 1] = $return_array[0];
-echo join(" ", $final_array)."\n";
+echo trim(join(" ", $final_array))."\n";
 ?>
