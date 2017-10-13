@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Balloon</title>
+		<script>
+
+			color = ["red", "green", "blue"];
+			var index = 0;
+			function increaseSize()
+			{
+				index++;
+				if (index == 3)
+					index = 0;
+				var size = parseInt(document.getElementById("balloon").style.height);
+				var border_radius = parseInt(document.getElementById("balloon").style.borderRadius);
+				size += 10;
+				if (size <=  420)
+				{
+					border_radius += 10;
+					document.getElementById("balloon").style.height = size+"px";
+					document.getElementById("balloon").style.width = size+"px";
+					document.getElementById("balloon").style.borderRadius = border_radius+"px";
+					document.getElementById("balloon").style.backgroundColor = color[index];
+				}
+				else
+				{
+					document.getElementById("balloon").style.height = "200px";
+					document.getElementById("balloon").style.width = "200px";
+					document.getElementById("balloon").style.borderRadius = "100px";
+					document.getElementById("balloon").style.backgroundColor = color[0];
+				}
+			}
+			function decreaseSize()
+			{
+				index--;
+				if (index <= -1)
+					index = 2;
+				var size = parseInt(document.getElementById("balloon").style.height);
+				var border_radius = parseInt(document.getElementById("balloon").style.borderRadius);
+				if (size >= 200)
+				{
+					size -= 5;
+					border_radius -= 5;
+					document.getElementById("balloon").style.height = size+"px";
+					document.getElementById("balloon").style.width = size+"px";
+					document.getElementById("balloon").style.borderRadius = border_radius+"px";
+					document.getElementById("balloon").style.backgroundColor = color[index];
+				}
+				else
+					document.getElementById("balloon").style.backgroundColor = color[0];
+			}
+		</script>
+	</head>
+	<body>
+		<div id="balloon" onmouseleave="decreaseSize()" onclick="increaseSize()" style="height:200px; width:200px; border-radius: 100px 100px 100px 100px; background-color:red"></div>
+	</body>
+</html>

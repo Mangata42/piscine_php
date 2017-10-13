@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculus 101</title>
+		<script>
+
+			myAlert = setInterval(func_warning, 10000);
+
+			function func_warning()
+			{
+
+				alert("Please, use me...");
+			}
+
+			function calcul()
+			{
+				window.clearInterval(myAlert);
+				var n1 = parseInt(document.getElementById("nbr1").value);
+				var n2 = parseInt(document.getElementById("nbr2").value);
+				var operator = document.getElementById("operator").value;
+				var result = 0;
+
+				if ( !(Number.isInteger(n1)) || !(Number.isInteger(n2)) || n1 < 0 || n2 < 0)
+					alert("Error");
+				else
+				{
+					if (operator == "+")
+					{
+						console.log(n1 + n2);
+						alert (n1 + n2);
+					}
+					if (operator == "-")
+					{
+						console.log(n1 - n2);
+						alert (n1 - n2);
+					}
+					if (operator == "*")
+					{
+						console.log(n1 * n2);
+						alert (n1 * n2);
+					}
+					if (operator == "/")
+					{
+						if (n2 > 0){
+							console.log(n1 / n2);
+							alert (n1 / n2);
+						}
+						else
+						{
+							console.log("It's over 9000");
+							alert("It's over 9000");
+						}
+					}
+					if (operator == "%")
+					{
+						if (n2 > 0){
+							console.log(n1 % n2);
+							alert (n1 % n2);
+						}
+						else
+						{
+							console.log("It's over 9000");
+							alert("It's over 9000");
+						}
+					}
+
+				}
+
+			};
+
+		</script>
+	</head>
+	<body>
+		<input type="text" id ="nbr1">
+		<select id="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</
+		<input type="text" id="nbr2">
+		</select>
+		<input type="text" id="nbr2">
+		<button type="button" onclick="calcul()">Try me!</button>
+	</body>
+</html>

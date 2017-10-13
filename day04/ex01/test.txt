@@ -1,0 +1,1 @@
+a:2:{s:5:"login";s:5:"admin";s:6:"passwd";s:5:"admin";}

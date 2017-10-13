@@ -1,6 +1,6 @@
 <?php
 
-header("Content-type: image/png");
-readfile("../42.png");
+header("Content-Type: image/png");
+readfile("../img/42.png");
 
 ?>
